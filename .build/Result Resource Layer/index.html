@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="cards4GearApp" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Template for building card systems on the Galaxy Gear"/>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular-route/angular-route.min.js"></script>
+    <script src="js/lib/angular-touch/angular-touch.min.js"></script>
+    <script src="js/app/app.js"></script>
+    <script src="js/app/controllers/controllers.js"></script>
+
+</head>
+
+<body  >
+	{{1+1}}
+	<div ng-controller="deckCtrl" ng-swipe-left="console.log('swipe');" ng-swipe-right="next()">
+  		<div ng-view></div>
+  	</div>
+</body>
+</html>
